@@ -1,6 +1,16 @@
 // ==== Challenge 1: Write your own closure ====
 // Write a simple closure of your own creation.  Keep it simple!
+function buildName(name) { 
+  var greeting = "Hello, " + name + "!"; 
+  var sayName = function() {
+      var welcome = greeting + " Welcome!";
+      console.log(welcome); 
+  };
+  return sayName; 
+}
 
+var sayMyName = buildName("John");
+sayMyName();
 
 /* STRETCH PROBLEMS, Do not attempt until you have completed all previous tasks for today's project files */
 
